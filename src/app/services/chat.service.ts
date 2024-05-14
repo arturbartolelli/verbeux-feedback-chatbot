@@ -25,11 +25,6 @@ export class ChatService {
     return (this.http.post(`/session`, requestBody, { headers })) 
   }
 
-  // updateSession(id: string, data: any) {
-  //   const headers = this.getHeaders();
-  //   this.http.put(`${this.apiUrl}${id}`, {}, { headers });
-  // }
-
   sendMessage(message: string, sessionId: string) {
     const headers = this.getHeaders();
     return this.http.put(`/session/${sessionId}`, { message }, { headers });
