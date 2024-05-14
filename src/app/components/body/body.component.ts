@@ -7,8 +7,7 @@ import { ChatService } from '../../services/chat.service';
 import { Message } from '../../interfaces/message';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
-import { response } from 'express';
+
 
 @Component({
   selector: 'app-body',
@@ -29,9 +28,11 @@ export class BodyComponent implements OnInit {
 
   message: any = ''
   messages: Message[] = []
+
   sessionId: string = ''; 
   assistentId = 40;
   response: any;
+
   complimentCount = 0;
   complaintCount = 0;
 
@@ -51,7 +52,7 @@ export class BodyComponent implements OnInit {
     })
   }
 
-
+  
   sendMessage() {
     this.messages.push({
       user: 'user',
