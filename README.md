@@ -32,3 +32,8 @@ Escrevi um documento explicando o comportamento detalhado de como a IA deve se c
 4. No terminal deve-se receber "Sessão Criada!", mostrando que a conexão com a API foi bem sucedida.
 5. Mande mensagens para o chatbot e ele reconhecerá e contará elogios e reclamações!
 
+#### Proxy
+Tive problemas com CORS e então adicionei um arquivo ```proxy.conf.js``` para fazer uma configuração de proxy
+para que pudesse usar sem problemas, sei que não é uma forma de boa prática de desenvolvimento por motivos de segurança,
+mas acredito que para o presente teste é o suficiente.
+
