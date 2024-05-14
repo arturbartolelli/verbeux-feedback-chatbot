@@ -1,27 +1,31 @@
-# FeedbackChatbot
+# Feedback Chatbot
+## Proposta
+Uma empresa do ramo alimentício (Alimentos SA) precisa de um chatbot capaz de receber feedback dos clientes, elogios ou reclamações e ser capaz de armazenar esses dados, nesse caso, em contadores na própria página. <br>
+Para isso foi usado a API da Verbeux de IA generativa.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+### Components
+Um site com 2 componentes, Header e Body, sendo o primeiro apenas para estilo da página e o segundo é a parte principal que contém o chat. <br>
 
-## Development server
+- Body
+    - Possui 2 métodos:
+        - createSession()
+        - sendMessage()
+    - HTML
+        - Ele vai iterar sobre as menssagens enviadas pelo usuário e pelo bot
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Services
+Possui um service chamado ChatService que é responsável pelas HttpRequests da API.
 
-## Code scaffolding
+### Bibliotecas
+- Angular (com Angular Material e Tailwind para estilos)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Documento de treinamento da IA
+Escrevi um documento explicando o comportamento detalhado de como a IA deve se comportar e enviei para que ela fosse treinada.
+![alt text](image.png)
 
-## Build
+### Como utilizar
+1. Primeiro passo é clonar este repositório em sua máquina
+2. Ao fazer o git clone, no terminal, utilize npm i para instalar todas as dependências do projeto
+3. Em seguida, no terminal, digite npm start, para começar a rodar o projeto no link http://localhost:4200 por padrão.
+4. No terminal deve-se receber "Sessão Criada!", mostrando que a conexão com a API foi bem sucedida.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

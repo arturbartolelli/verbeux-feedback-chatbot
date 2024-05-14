@@ -1,0 +1,27 @@
+.logo {
+    padding: 10px;
+    width: 45%;
+    height: 45%;
+}
+
+.mat-toolbar {
+    background-color: black;
+    color: blueviolet;
+    height: 40px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .title-group i {
+    padding-right: 20px;
+}
+

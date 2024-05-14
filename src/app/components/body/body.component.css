@@ -1,0 +1,43 @@
+mat-card {
+    margin: auto;
+    top: 8%;
+    width: 40%;
+    display: flex;
+    height: 70%;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(62, 0, 119);
+}
+
+mat-toolbar {
+    background-color: rgb(123, 10, 228);
+    color: #fff;
+    height: 45px;
+    border-radius: 15px 15px 0 0;
+}
+
+mat-form-field {
+    width: 94.5%;
+    margin-left: 15px;
+    margin-right: 3px;
+}
+
+.chat {
+    padding: 20px;
+    background-color: #E07BE0;
+    height: 100%;
+    margin: 15px 15px 5px;
+    border-radius: 10px;
+}
+
+.name {
+    padding-left: 15px;
+}
+
+
+.input-container {
+    bottom: 0;
+    margin-top: 20px;
+}
+
+
